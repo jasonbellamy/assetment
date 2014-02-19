@@ -1,0 +1,43 @@
+{
+  "name": "assetment",
+  "description": "Assesses & extracts references to all the assets in your markup.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jasonbellamy/assetment",
+  "author": {
+    "name": "Jason Bellamy",
+    "email": "j@sonbellamy.com",
+    "url": "http://jasonbellamy.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasonbellamy/assetment.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jasonbellamy/assetment/issues"
+  },
+  "license": "MIT",
+  "main": "lib/assetment",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "~3.1.2"
+  },
+  "dependencies": {
+    "jsdom": "~0.10.1"
+  },
+  "keywords": [
+    "scrape",
+    "find",
+    "extract",
+    "assets",
+    "images",
+    "css",
+    "javascript",
+    "dom"
+  ]
+}
