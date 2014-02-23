@@ -61,10 +61,10 @@ describe( "assetment", function () {
         should( this.assets.images[0] ).have.ownProperty( "attributes" );
         done();
       });
-      it( "should return an array with the names & values for each attribute.", function( done ) {
-        should( this.assets.stylesheets[0].attributes ).be.an.Array;
-        should( this.assets.javascripts[0].attributes ).be.an.Array;
-        should( this.assets.images[0].attributes ).be.an.Array;
+      it( "should return an object with the names & values for each attribute.", function( done ) {
+        should( this.assets.stylesheets[0].attributes ).be.an.Object;
+        should( this.assets.javascripts[0].attributes ).be.an.Object;
+        should( this.assets.images[0].attributes ).be.an.Object;
         done();
       });
       it( "should NOT be writable.", function( done ) {
@@ -79,12 +79,6 @@ describe( "assetment", function () {
           should( this.assets.stylesheets[0].attributes ).containEql( { "data-type": "stylesheet" } );
           should( this.assets.javascripts[0].attributes ).containEql( { "data-type": "javascript" } );
           should( this.assets.images[0].attributes ).containEql( { "data-type": "image" } );
-          done();
-        });
-        it( "should NOT be writable.", function( done ) {
-          should( Object.isFrozen( this.assets.stylesheets[0].attributes[0] ) );
-          should( Object.isFrozen( this.assets.javascripts[0].attributes[0] ) );
-          should( Object.isFrozen( this.assets.images[0].attributes[0] ) );
           done();
         });
       });
