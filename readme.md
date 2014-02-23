@@ -23,21 +23,22 @@ console.log( assets );
   images: [
     { 
       resource: "image.png",
-      attributes: [ { alt: "image" }, { src: "image.png" } ]
+      attributes: { alt: "image", src: "image.png" }
     {
   ],
   javascripts: [
     { 
       resource: "script.js",
-      attributes: [ { type: "text/javascript" }, { src: "script.js" } ]
+      attributes: { type: "text/javascript", src: "script.js" }
     {
   ],
   stylesheets: [
     { 
       resource: "style.css",
-      attributes: [ { type: "text/css" }, { src: "style.css" } ]
+      attributes: { type: "text/css" , src: "style.css" }
     {
   ]
+}
 */
 ```
 
