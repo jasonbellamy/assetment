@@ -1,7 +1,7 @@
 {
   "name": "assetment",
   "description": "Assesses & extracts references to all the assets in your markup.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "https://github.com/jasonbellamy/assetment",
   "author": {
     "name": "Jason Bellamy",
