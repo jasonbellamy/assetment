@@ -7,7 +7,7 @@ var should    = require( "should" );
 describe( "assetment", function () {
 
   before( function () {
-    this.assets = assetment( fs.readFileSync( "test/fixtures/assetment.html", "utf8" ) );
+    this.assets = assetment( fs.readFileSync( "test/fixtures/assetment.html", "utf8" ), { stylesheets: true, javascripts: true, images: true } );
   });
 
   it( "should return an object.", function( done ) {
