@@ -53,16 +53,13 @@ console.log( assetment( markup, filters ) );
 
 ### assetment( markup, filters )
 
-#### markup
-*Required*  
-Type: `String`  
-Markup that you would like to extract the assets from.
-
-#### filters
-*Required*  
-Type: `Object`|`Boolean`  
-Default: `{ images: false, javascripts: false, stylesheets: false }`  
-Object that contains the types of assets you want to extract.
+Name                | Type      | Argument     | Default | Description
+--------------------|-----------|--------------|---------|--------------
+markup              | `string`  | `<required>` | `null`  | Markup that you would like to extract the assets from.
+filters             | `Object`  | `<required>` | `null`  | Object that contains the types of assets you want to extract.
+filters.images      | `boolean` | `<optional>` | `false` | Extract references to image files.
+filters.javascripts | `boolean` | `<optional>` | `false` | Extract references to JavaScript files.
+filters.stylesheets | `boolean` | `<optional>` | `false` | Extract references to stylesheet files.
 
 
 ## Contributing
